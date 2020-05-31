@@ -48,11 +48,8 @@ csv()
       console.log('emailId', emailId, 'subject', SUBJECT);
       const HTML_BODY = `
         Hi ${i.name},<br/><br/>
-        Wishing you a happy and blessed Eid<br/>
-        May the lamps of joy, illuminate your life and fill your days with the bright sparkles of peace, mirth and goodwill. <br/>May the light of joy and prosperity shine on you this diwali. <br/>
-        And throughout comming year. "HAPPY Eid" To you & your family<br/><br/>
-        best regards,<br/>
-        AAndZ Team.
+        Wishing you a happy day<br/>
+
       `;
       sendEmailMailgun(fromEmail, emailId, HTML_BODY, SUBJECT).then(() => {
         console.log('success:sent:::==', i.name);
